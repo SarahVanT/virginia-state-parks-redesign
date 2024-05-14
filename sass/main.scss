@@ -1,0 +1,19 @@
+// custom variables
+$primary: #204E2F;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "brand": #204E2F,
+    "text-strong": #04140D,
+    "text-weak": #3C4541,
+    "stroke-strong": #57645E,
+    "stroke-weak": #CDD1CF,
+    "fill": #E6E8E7,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
