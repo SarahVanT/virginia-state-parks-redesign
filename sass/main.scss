@@ -1,19 +1,25 @@
 // custom variables
-$primary: #204E2F;
+$primary: #204e2f;
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 
-$custom-theme-colors: (
-    "brand": #204E2F,
-    "text-strong": #04140D,
-    "text-weak": #3C4541,
-    "stroke-strong": #57645E,
-    "stroke-weak": #CDD1CF,
-    "fill": #E6E8E7,
-);
+// $custom-theme-colors: (
+//   "brand": #204e2f,
+//   "text-strong": #04140d,
+//   "text-weak": #3c4541,
+//   "stroke-strong": #57645e,
+//   "stroke-weak": #cdd1cf,
+//   "fill": #e6e8e7,
+// );
 
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../sass/base/variables";
+// Custom scss
+@import "../sass/base/reset";
+@import "../sass/base/typography";
+@import "../sass/base/utilities";
+@import "../sass/components/buttons";
