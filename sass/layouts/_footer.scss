@@ -1,0 +1,28 @@
+.link-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  .icon-container {
+    height: 4rem;
+    width: 4rem;
+    // border-radius: 50%;
+    border-radius: 1rem;
+    background: #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+
+    .icon {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+  a {
+    padding: .5rem;
+  }
+}
+
+.link-container:last-child {
+  margin-bottom: 0;
+}
