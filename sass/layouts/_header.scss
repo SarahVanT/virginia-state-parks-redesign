@@ -1,0 +1,60 @@
+.va-bar {
+  background: #212121;
+  color: #fff;
+  display: flex;
+  align-items: center; // Center items vertically
+
+  .cardinal-logo {
+    img {
+      width: 9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .dcr {
+    display: flex;
+    align-items: center; // Center link vertically
+    padding-left: 1rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .button {
+    margin-left: auto;
+    padding: 1.5rem 2rem;
+    background: #383939;
+    cursor: pointer;
+    &:hover {
+      background: #ba1a1a;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 600;
+
+      span {
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+header {
+  height: 10rem;
+  border-bottom: 1px solid #cdd1cf;
+}
+.header-content {
+  display: flex ;
+  align-items: center;
+  justify-content: space-between;
+}
