@@ -17,10 +17,14 @@
     padding-left: 1rem;
 
     a {
-      color: #fff;
+      color: $text-white;
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 700;
+
+      &:focus {
+        outline: 3px solid $text-white !important;
+      }
 
       &:hover {
         text-decoration: underline;
@@ -37,10 +41,14 @@
       background: #ba1a1a;
     }
     a {
-      color: white;
+      color: $text-white;
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 600;
+
+      &:focus {
+        outline: 3px solid #fff !important;
+      }
 
       span {
         margin-left: 0.5rem;
@@ -49,12 +57,67 @@
   }
 }
 
-header {
-  height: 10rem;
-  border-bottom: 1px solid #cdd1cf;
+nav {
+  // display: flex;
+  // align-items: center;
+  // height: 10rem;
+  // border-bottom: 1px solid #cdd1cf;
 }
-.header-content {
-  display: flex ;
-  align-items: center;
-  justify-content: space-between;
+
+.navbar {
+  border-bottom: 1px solid #cdd1cf;
+  .navbar-nav {
+    .nav-item {
+      margin-right: 2rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .nav-link {
+      color: $text-strong-color;
+      font-weight: 500;
+      font-size: 1.9rem;
+      &:visited,
+      &:active {
+        color: $text-strong-color;
+      }
+      &:hover {
+        color: $brand-color;
+        text-decoration: underline;
+      }
+      &:focus {
+        color: $brand-color;
+        outline: 3px solid $brand-color;
+        text-decoration: underline;
+      }
+    }
+    // .nav-link {
+    //   color: $text-strong-color;
+
+    //   &:hover {
+    //     color: $brand-color;
+    //   }
+
+    //   &:visited,
+    //   &:active {
+    //     color: $text-strong-color;
+    //   }
+    // }
+  }
+
+  .navbar-brand {
+    display: inline-block; /* Ensure it covers the image */
+    outline: none; /* Remove default outline */
+
+    // &:focus {
+    //   outline: 3px solid $brand-color; /* Custom focus outline */
+    // }
+
+    img {
+      height: 140px;
+      width: auto;
+      margin-bottom: -6rem;
+    }
+  }
 }

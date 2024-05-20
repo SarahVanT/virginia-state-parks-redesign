@@ -1,0 +1,11 @@
+$enable-shadows: false;
+$input-btn-focus-box-shadow: none;
+$input-focus-border-color: $text-strong-color;
+
+// Custom focus styles
+*:focus {
+  outline: 3px solid $text-strong-color !important;
+  box-shadow: none;
+}
+
+

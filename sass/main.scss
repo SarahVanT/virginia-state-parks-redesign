@@ -3,26 +3,44 @@ $primary: #204e2f;
 
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
 
-// $custom-theme-colors: (
-//   "brand": #204e2f,
-//   "text-strong": #04140d,
-//   "text-weak": #3c4541,
-//   "stroke-strong": #57645e,
-//   "stroke-weak": #cdd1cf,
-//   "fill": #e6e8e7,
-// );
+// Custom Bootstrap variable overrides
+$enable-shadows: false;
+$input-btn-focus-box-shadow: none; // Remove the box-shadow
+$input-focus-border-color: $primary; // Custom focus border color
 
-// $theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// Custom spacing values
+$spacing-0: 0;
+$spacing-xs: 0.8rem; // 8px
+$spacing-sm: 1.6rem; // 16px
+$spacing-md: 2.4rem; // 24px
+$spacing-lg: 3.2rem; // 3.2px
+$spacing-xl: 4.8rem; // 48px
+$spacing-xxl: 8rem; // 80px
+
+// Override the default spacers map with custom values
+$spacers: (
+  "0": $spacing-0,
+  "xs": $spacing-xs,
+  "sm": $spacing-sm,
+  "md": $spacing-md,
+  "lg": $spacing-lg,
+  "xl": $spacing-xl,
+  "xxl": $spacing-xxl,
+);
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../sass/base/variables";
+@import "../sass/custom/custom-bootstrap";
 // Custom scss
 @import "../sass/base/reset";
 @import "../sass/base/typography";
 @import "../sass/base/utilities";
 @import "../sass/components/buttons";
+@import "../sass/components/forms";
 @import "../sass/components/icons";
 @import "../sass/layouts/header";
 @import "../sass/layouts/footer";
+@import "../sass/pages/home";

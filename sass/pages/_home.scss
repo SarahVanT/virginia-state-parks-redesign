@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+  .hero-image img {
+    border-radius: 20px;
+    height: 50rem;
+    width: 100%;
+    object-fit: cover;
+    // filter: brightness(1);
+  }
+
+  .finding-park {
+    // background: $text-white;
+    // border: 1px solid black;
+    // margin: -150px auto 60px auto;
+
+    background: #fff; // Assuming $text-white is white, replace if necessary
+    // border: 1px solid black;
+    margin: 0 auto; // Center the form horizontally
+    padding: 20px;
+    position: absolute; // Position the form absolutely within the hero section
+    bottom: -10%; // Adjust as necessary to move the form higher or lower
+    left: 50%; // Center the form horizontally
+    transform: translateX(-50%); // Center the form horizontally
+    box-shadow: 0px 4px 8px rgb(4 20 13 / 39%);
+    border-radius: 10px; // Add some border-radius for a nice look
+    z-index: 10; // Ensure it is above the image
+  }
+  a {
+    display: inline-block;
+  }
+}
