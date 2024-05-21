@@ -1,5 +1,5 @@
 .form-label {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -7,4 +7,9 @@
   font-size: 1.6rem;
   border-color: #57645e;
   border-width: 0.2rem;
+  &:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0);
+    outline: black;
+  }
 }

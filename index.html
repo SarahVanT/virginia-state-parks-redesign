@@ -67,8 +67,11 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
             </ul>
+            <form role="search">
+              <input title="Search" type="text" name="search" />
+              <button type="submit">Search</button>
+            </form>
 
-            <button>Search Button goes here</button>
             <!-- <form class="my-2 my-lg-0">
               <input
                 class="form-control mr-sm-2"
@@ -176,11 +179,11 @@
           <h1 class="text-center pb-sm">Discover Virginia's Parks</h1>
           <div class="row p-4 hero-image">
             <img
-              src="/images/49133199246_95da74d81a_o.jpg"
+              src="/images/Rhododendron.jpg"
               alt="Rhododendron hiking trail at Grayson Highlands"
             />
           </div>
-          <div class="w-50 finding-park py-lg px-md">
+          <div class="w-50 finding-park p-xl">
             <form>
               <label for="parkSelect" class="form-label">Find a park:</label>
               <select id="parkSelect" class="form-select form-select-lg mb-3">
@@ -205,8 +208,66 @@
           </div>
         </div>
       </section>
-      <section class="my-xl">
-        <h2>Testing</h2>
+      <!-- Activities -->
+      <section>
+        <div class="container my-huge">
+          <h2 class="section-header">Featured activities</h2>
+          <div class="row row-cols-2 row-cols-md-4 g-4 activities">
+            <div class="col d-flex align-items-stretch">
+              <div class="card">
+                <img
+                  src="/images/activities/Occoneechee-Lake.jpeg"
+                  class="card-img-top"
+                  alt="Kayaking at Occoneechee Lake."
+                />
+                <div class="card-body">
+                  <a href="#" class="card-link stretched-link">Boat rentals</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+              <div class="card">
+                <img
+                  src="/images/activities/Staunton-River.jpeg"
+                  class="card-img-top"
+                  alt="Campsite at Staunton River."
+                />
+                <div class="card-body">
+                  <a href="#" class="card-link stretched-link">Camping</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+              <div class="card">
+                <img
+                  src="/images/activities/ShenandoahRiver.jpeg"
+                  class="card-img-top"
+                  alt="Hiking trail at Shenandoah River."
+                />
+                <div class="card-body">
+                  <a href="#" class="card-link stretched-link">Hiking</a>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex align-items-stretch">
+              <div class="card">
+                <img
+                  src="/images/activities/leesylvania.jpg"
+                  class="card-img-top"
+                  alt="Playground at Leesylvania."
+                />
+                <div class="card-body">
+                  <a href="#" class="card-link stretched-link">Playgrounds</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center mt-lg">
+              <button class="btn btn-primary">Find more activities</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
