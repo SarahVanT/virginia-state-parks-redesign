@@ -12948,7 +12948,7 @@ p {
 .link-container {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 .link-container .icon-container {
   height: 4rem;
@@ -12964,12 +12964,26 @@ p {
   font-size: 2rem;
   color: white;
 }
-.link-container a {
-  padding: 0.5rem;
-}
 
 .link-container:last-child {
   margin-bottom: 0;
+}
+
+footer {
+  border-top: 1px solid #cdd1cf;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  margin-bottom: 1.6rem;
+}
+footer h2, footer .h2 {
+  margin: 0 0 1.6rem 0;
+}
+footer .notice {
+  border-top: 1px solid #cdd1cf;
+  font-size: 1.5rem;
 }
 
 .hero {
