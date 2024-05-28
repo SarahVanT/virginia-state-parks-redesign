@@ -1,0 +1,15 @@
+.parks {
+  .card {
+    --bs-card-border-color: none !important;
+  }
+  .card-img-top {
+    border-radius: 10px;
+    margin-bottom: $spacing-sm;
+  }
+  .card-body {
+    padding: $spacing-0;
+  }
+  .col {
+    margin-bottom: $spacing-md;
+  }
+}

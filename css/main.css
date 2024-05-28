@@ -12822,15 +12822,23 @@ p {
   letter-spacing: 0.5px;
 }
 
+a:link, a:visited {
+  color: #204e2f;
+}
+a:hover, a:active {
+  text-decoration: none;
+}
+
 .btn {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  font-weight: 500;
   padding: 1.5rem 4rem;
   border: none;
 }
 
 .btn-primary {
   background-color: #204e2f;
-  color: #fefefe;
+  color: #fefefe !important;
 }
 .btn-primary:hover {
   background-color: rgba(32, 78, 47, 0.8);
@@ -13052,6 +13060,9 @@ footer .notice {
 .section-parking .event-details a {
   text-decoration: none;
 }
+.section-parking .event-details a:hover {
+  text-decoration: underline;
+}
 .section-parking .fancy-date {
   color: #fefefe;
   background: #204e2f;
@@ -13077,4 +13088,18 @@ footer .notice {
 }
 .section-parking img {
   border-radius: 8px;
+}
+
+.parks .card {
+  --bs-card-border-color: none !important;
+}
+.parks .card-img-top {
+  border-radius: 10px;
+  margin-bottom: 1.6rem;
+}
+.parks .card-body {
+  padding: 0;
+}
+.parks .col {
+  margin-bottom: 2.4rem;
 }/*# sourceMappingURL=main.css.map */

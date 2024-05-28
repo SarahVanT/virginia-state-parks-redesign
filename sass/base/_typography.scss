@@ -32,3 +32,14 @@ p {
   font-weight: $font-weight-regular;
   letter-spacing: 0.5px;
 }
+
+a {
+  &:link,
+  &:visited {
+    color: $brand-color;
+  }
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}

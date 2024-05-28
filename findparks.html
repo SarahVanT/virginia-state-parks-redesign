@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="css/main.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="va-bar">
+      <div class="cardinal-logo">
+        <img
+          src="https://www.developer.virginia.gov/media/developer/assets/img/bbar_logos-white.svg"
+          alt="Commonwealth of Virginia cardinal logo"
+        />
+      </div>
+      <div class="dcr">
+        <a href="https://www.dcr.virginia.gov"
+          >Virginia Department of Conservation and Recreation</a
+        >
+      </div>
+      <div class="button">
+        <a href="https://www.virginia.gov/services/"
+          >Find a Commonwealth Resource
+          <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span
+        ></a>
+      </div>
+    </div>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/images/logo.png" alt="Brand Logo" />
+            <!-- Adjust height as needed -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Parks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Buy a Pass</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+            <form role="search">
+              <input title="Search" type="text" name="search" />
+              <button type="submit">Search</button>
+            </form>
+
+            <!-- <form class="my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-primary my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <header>
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container">
+          <a href="#" class="navbar-brand"
+            ><img
+              src="/images/logo.png"
+              alt="Virginia State Parks Homepage"
+              width="110"
+          /></a>
+          
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Parks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Buy a Pass</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-primary btn-sm" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="/images/logo.png" height="130" alt="Virginia State Parks Homepage" />
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link active">Home</a>
+            <a href="#" class="nav-item nav-link">Profile</a>
+            <a href="#" class="nav-item nav-link">Messages</a>
+            <a href="#" class="nav-item nav-link disabled" tabindex="-1"
+              >Reports</a
+            >
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a href="#" class="nav-item nav-link">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <main>
+      <section>
+        <div class="container my-huge">
+          <h1>Find Parks</h1>
+          <p>
+            Explore our 42 parks with campsites, cabins, trails, and water
+            access. Experience beaches, picnics, lodges, events, and more. From
+            Cumberland Gap to the Atlantic, Virginia State Parks cater to all.
+            Unwind from daily life and bond with nature and family at a nearby
+            park.
+          </p>
+          <h2>Reservations</h2>
+          <p>
+            You can reserve cabins, campsites, lodges, and picnic shelters at
+            Virginia State Parks. Use our easy online or phone system to book up
+            to 11 months in advance. Advance reservations are recommended.
+            <a href="#">Learn about cabin rentals and camping.</a>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container my-huge">
+          <div class="row">
+            <aside class="col-md-3">
+              <h2>Filter Options</h2>
+              <!-- Your filter options go here -->
+            </aside>
+            <div class="col-md-9">
+              <h2>Search Results</h2>
+              <div class="row row-cols-2 row-cols-md-3 gy-small parks mt-xl">
+                <div class="col d-flex align-items-stretch">
+                  <div class="card">
+                    <img
+                      src="/images/activities/Occoneechee-Lake.jpeg"
+                      class="card-img-top"
+                      alt="Kayaking at Occoneechee Lake."
+                    />
+                    <div class="card-body">
+                      <a href="#" class="card-link stretched-link"
+                        >Boat rentals</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                  <div class="card">
+                    <img
+                      src="/images/activities/Staunton-River.jpeg"
+                      class="card-img-top"
+                      alt="Campsite at Staunton River."
+                    />
+                    <div class="card-body">
+                      <a href="#" class="card-link stretched-link">Camping</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                  <div class="card">
+                    <img
+                      src="/images/activities/ShenandoahRiver.jpeg"
+                      class="card-img-top"
+                      alt="Hiking trail at Shenandoah River."
+                    />
+                    <div class="card-body">
+                      <a href="#" class="card-link stretched-link">Hiking</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-stretch">
+                  <div class="card">
+                    <img
+                      src="/images/activities/leesylvania.jpg"
+                      class="card-img-top"
+                      alt="Playground at Leesylvania."
+                    />
+                    <div class="card-body">
+                      <a href="#" class="card-link stretched-link"
+                        >Playgrounds</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container my-huge">
+        <div class="row d-flex justify-content-around">
+          <div class="col-12 col-md-3">
+            <h2>Explore the Parks</h2>
+            <ul>
+              <li><a href="">Reservations</a></li>
+              <li><a href="">Programs and Events</a></li>
+              <li><a href="">Passes, prices and fees</a></li>
+              <li><a href="">Know Before You Go</a></li>
+              <li><a href="">Accessibility</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h2>Get Involved</h2>
+            <ul>
+              <li><a href="">Volunteer</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Youth Programs</a></li>
+              <li><a href="">Host an Event</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <h2>Stay Connected</h2>
+            <ul class="contact-links">
+              <li class="link-container">
+                <span class="icon-container">
+                  <i class="fa-solid fa-envelope icon"></i>
+                </span>
+                <a href="#">Email</a>
+              </li>
+              <li class="link-container">
+                <span class="icon-container">
+                  <i class="fa-brands fa-facebook-f icon"></i>
+                </span>
+                <a href="#">Facebook</a>
+              </li>
+              <li class="link-container">
+                <span class="icon-container">
+                  <i class="fa-brands fa-x-twitter icon"></i>
+                </span>
+                <a href="#">X</a>
+              </li>
+              <li class="link-container">
+                <span class="icon-container">
+                  <i class="fa-brands fa-pinterest-p icon"></i>
+                </span>
+                <a href="#">Pinterest</a>
+              </li>
+              <li class="link-container">
+                <span class="icon-container">
+                  <i class="fa-brands fa-instagram icon"></i>
+                </span>
+                <a href="#">Instagram</a>
+              </li>
+              <li class="link-container">
+                <span class="icon-container">
+                  <i class="fa-brands fa-youtube icon"></i>
+                </span>
+                <a href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center notice p-md">
+        This is a personal redesign project inspired by Virginia State Parks for
+        educational purposes only.
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2e89d80a8b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
