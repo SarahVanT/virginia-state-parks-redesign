@@ -260,11 +260,11 @@
         </div>
       </section>
       <section>
-        <div class="container my-xl">
+        <div class="container my-xxl">
           <div class="row">
-            <div class="col-9">
+            <div class="col-12 col-lg-8">
               <h2>Overview</h2>
-              <div class="col-10">
+              <div class="col-11 mt-lg">
                 <p>
                   Natural Bridge State Park was dedicated on September 24, 2016.
                   It features the 200-foot-tall Natural Bridge, a limestone arch
@@ -287,16 +287,154 @@
                 </p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-4">
               <aside class="sidebar">
                 <h3>Address</h3>
                 <p>6477 South Lee Highway, Natural Bridge, VA 24578</p>
-                <h3>Address</h3>
+                <h3>Hours</h3>
                 <p>8 a.m. to dusk</p>
                 <h3>Contact</h3>
                 <p>NaturalBridge@dcr.virginia.gov</p>
                 <a href="tel:5402911326">(540) 291-1326.</a>
               </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-xxl">
+          <h2>Amenities & Features</h2>
+          <div class="row mt-lg">
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-wheelchair icon"></i>
+                </div>
+                <p>Accessible</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-campground icon"></i>
+                </div>
+                <p>Camping</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-store icon"></i>
+                </div>
+                <p>Camp Store/Gift Shop</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-person-hiking icon"></i>
+                </div>
+                <p>Hiking</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-restroom icon"></i>
+                </div>
+                <p>Restroom</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-utensils icon"></i>
+                </div>
+                <p>Snack Bar</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="icon-row">
+                <div class="icon-container">
+                  <i class="fa-solid fa-house-flag icon"></i>
+                </div>
+                <p>Visitor Center</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container my-xxl">
+          <h2>Map & Visitor Guide</h2>
+          <div class="embed-responsive mb-lg mt-lg" style="height: 500px">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12639.510239412992!2d-79.5437475!3d37.6285678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884cd08b91c6b643%3A0x1e39415be412ec50!2sNatural%20Bridge%20State%20Park!5e0!3m2!1sen!2sus!4v1717011228881!5m2!1sen!2sus"
+              style="border: 0; width: 100%; height: 100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <ul class="map-links">
+            <li><a href="#">Natural Bridge Trail Guide.pdf</a></li>
+            <li><a href="#">Natural Bridge Geo-referenced map.pdf</a></li>
+            <li>
+              <a href="#">Natural Bridge Avenza App Geo-referenced Map</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container my-xxl">
+          <h2>History</h2>
+          <p>
+            Natural Bridge formed when a sinkhole turned Cedar Creek into an
+            underground river. This river carved a cave whose roof collapsed
+            except for today's Natural Bridge. Thomas Jefferson, who called it
+            “the most sublime of Nature’s works,” bought the bridge in 1774.
+            Over the years, it passed through various owners. In 2014, Angelo
+            Puglisi gave the bridge and 188 acres to the Virginia Conservation
+            Legacy Fund. The state took over management in 2016.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="container my-xxl">
+          <h2>Questions</h2>
+          <h3 class="mt-lg">General</h3>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What are the park hours?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -376,18 +514,10 @@
       src="https://kit.fontawesome.com/2e89d80a8b.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
-
-<!-- 
-Font Awesome Icons
-
-Accessible  YES <i class="fa-solid fa-wheelchair"></i>
-Camping YES <i class="fa-solid fa-campground"></i>
-Food (related to gift shop/camp store) YES (store?) <i class="fa-solid fa-store"></i>
-Hiking YES <i class="fa-solid fa-person-hiking"></i>
-Restrooms YES <i class="fa-solid fa-restroom"></i>
-Utensils (related to snack bar) YES <i class="fa-solid fa-utensils"></i>
-Building with a flag (related to visitor center) YES <i class="fa-solid fa-house-flag"></i>
--->
-<!-- FontAwesome -->

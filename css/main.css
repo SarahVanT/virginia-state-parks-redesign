@@ -13117,7 +13117,32 @@ footer .notice {
 }
 
 .sidebar {
-  background-color: #e6e8e7;
-  border: 3px solid black;
+  background-color: #fefefe;
+  border: 3px solid #cdd1cf;
   padding: 3.2rem;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.icon-row {
+  display: flex;
+  align-items: end;
+}
+.icon-row .icon-container .icon {
+  font-size: 3.5rem;
+  margin: 0 1.6rem 0 0;
+}
+
+.map ul {
+  padding-left: 0;
+}
+.map li {
+  margin-bottom: 1.6rem;
+}
+.map li:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-header .accordion-button {
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */

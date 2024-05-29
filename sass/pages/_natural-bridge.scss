@@ -13,7 +13,34 @@
 }
 
 .sidebar {
-  background-color: $fill-color;
-  border: 3px solid black;
+  background-color: $text-white;
+  border: 3px solid $stroke-weak-color;
   padding: $spacing-lg;
+  border-radius: 8px;
+  word-wrap: break-word;
+}
+
+.icon-row {
+  display: flex;
+  align-items: end;
+  .icon-container .icon {
+    font-size: 3.5rem;
+    margin: 0 $spacing-sm 0 0;
+  }
+}
+
+.map {
+  ul {
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: $spacing-sm;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.accordion-header .accordion-button {
+  font-size: 2rem; // Adjust the size as needed
 }
