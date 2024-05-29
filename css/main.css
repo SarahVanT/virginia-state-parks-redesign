@@ -13102,4 +13102,22 @@ footer .notice {
 }
 .parks .col {
   margin-bottom: 2.4rem;
+}
+
+.virginia-map svg {
+  width: 30rem;
+  height: auto;
+}
+
+.image-style-square {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.sidebar {
+  background-color: #e6e8e7;
+  border: 3px solid black;
+  padding: 3.2rem;
 }/*# sourceMappingURL=main.css.map */
