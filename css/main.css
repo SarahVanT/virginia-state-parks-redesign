@@ -12810,6 +12810,8 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 3.6rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 h3, .h3 {
@@ -12920,6 +12922,8 @@ a:hover, a:active {
 
 .navbar {
   border-bottom: 1px solid #cdd1cf;
+  border-bottom: thin solid rgba(205, 209, 207, 0.33);
+  border-bottom: thin solid #cdd1cf;
 }
 .navbar .navbar-nav .nav-item {
   margin-right: 2rem;
@@ -13127,7 +13131,8 @@ footer .notice {
 
 .icon-row {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  align-items: center;
 }
 .icon-row .icon-container .icon {
   font-size: 3.5rem;
@@ -13151,8 +13156,14 @@ footer .notice {
   border-radius: 8px;
 }
 .questions-container .question-category {
-  padding: 0 1.2rem;
-  padding-top: 1.6rem;
+  padding-left: 1.2rem;
+  padding-top: 3.2rem;
+}
+.questions-container .question-category:first-child {
+  padding-top: 0;
+}
+.questions-container .question-category i {
+  margin-right: 0.8rem;
 }
 .questions-container .accordion-header .accordion-button {
   font-size: 2rem;
@@ -13162,7 +13173,7 @@ footer .notice {
 .questions-container .accordion-item {
   border: none;
   border-radius: 0px !important;
-  margin-bottom: 0.8rem;
+  margin-bottom: -1rem;
 }
 .questions-container .accordion-item:first-child {
   border-top-left-radius: 0px !important;

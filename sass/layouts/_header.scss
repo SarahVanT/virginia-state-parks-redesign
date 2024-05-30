@@ -65,7 +65,10 @@ nav {
 }
 
 .navbar {
+  // Cant decide which one I like...
   border-bottom: 1px solid #cdd1cf;
+  border-bottom: thin solid rgba(205, 209, 207, 0.33);
+  border-bottom: thin solid #cdd1cf;
   .navbar-nav {
     .nav-item {
       margin-right: 2rem;
