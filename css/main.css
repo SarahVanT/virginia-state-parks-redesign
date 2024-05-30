@@ -13152,11 +13152,12 @@ footer .notice {
 }
 .questions-container .question-category {
   padding: 0 1.2rem;
+  padding-top: 1.6rem;
 }
 .questions-container .accordion-header .accordion-button {
   font-size: 2rem;
   color: #204e2f !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 .questions-container .accordion-item {
   border: none;
@@ -13173,4 +13174,11 @@ footer .notice {
 }
 .questions-container .accordion-item .accordion-button {
   border-radius: 0px !important;
+}
+.questions-container .accordion-item .accordion-button:focus {
+  background: none;
+}
+.questions-container .accordion-item .accordion-button:not(.collapsed) {
+  background-color: rgba(255, 192, 203, 0);
+  box-shadow: none;
 }/*# sourceMappingURL=main.css.map */
