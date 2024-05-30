@@ -12814,6 +12814,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: 2.8rem;
+  font-size: 2rem;
 }
 
 p {
@@ -13118,7 +13119,7 @@ footer .notice {
 
 .sidebar {
   background-color: #fefefe;
-  border: 3px solid #cdd1cf;
+  border: thin solid rgba(205, 209, 207, 0.3294117647);
   padding: 3.2rem;
   border-radius: 8px;
   word-wrap: break-word;
@@ -13143,6 +13144,33 @@ footer .notice {
   margin-bottom: 0;
 }
 
-.accordion-header .accordion-button {
+.questions-container {
+  background-color: #fefefe;
+  border: thin solid rgba(205, 209, 207, 0.3294117647);
+  padding: 3.2rem;
+  border-radius: 8px;
+}
+.questions-container .question-category {
+  padding: 0 1.2rem;
+}
+.questions-container .accordion-header .accordion-button {
   font-size: 2rem;
+  color: #204e2f !important;
+  font-weight: 500;
+}
+.questions-container .accordion-item {
+  border: none;
+  border-radius: 0px !important;
+  margin-bottom: 0.8rem;
+}
+.questions-container .accordion-item:first-child {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+.questions-container .accordion-item:last-child {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.questions-container .accordion-item .accordion-button {
+  border-radius: 0px !important;
 }/*# sourceMappingURL=main.css.map */

@@ -14,7 +14,7 @@
 
 .sidebar {
   background-color: $text-white;
-  border: 3px solid $stroke-weak-color;
+  border: thin solid #cdd1cf54;
   padding: $spacing-lg;
   border-radius: 8px;
   word-wrap: break-word;
@@ -41,6 +41,43 @@
   }
 }
 
-.accordion-header .accordion-button {
-  font-size: 2rem; // Adjust the size as needed
+.questions-container {
+  background-color: #fefefe;
+  border: thin solid #cdd1cf54;
+  padding: 3.2rem;
+  border-radius: 8px;
+
+  .question-category {
+    padding: 0 1.2rem;
+  }
+
+  .accordion-header .accordion-button {
+    font-size: 2rem; // Adjust the size as needed
+    color: $brand-color !important;
+    font-weight: 500;
+  }
+
+  .accordion-item {
+    border: none;
+    border-radius: 0px !important;
+    margin-bottom: $spacing-xs;
+
+    // &:not(:first-child) {
+    //   border-top: 1px solid $stroke-strong-color;
+    // }
+
+    &:first-child {
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 0px !important;
+      border-bottom-right-radius: 0px !important;
+    }
+
+    .accordion-button {
+      border-radius: 0px !important; // Ensure buttons do not have border-radius
+    }
+  }
 }
