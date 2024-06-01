@@ -34,11 +34,13 @@ $spacers: (
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 @import "../sass/base/variables";
+@import "../sass/base/typography";
 @import "../sass/custom/custom-bootstrap";
 // Custom scss
 @import "../sass/base/reset";
-@import "../sass/base/typography";
+
 @import "../sass/base/utilities";
 @import "../sass/components/buttons";
 @import "../sass/components/forms";

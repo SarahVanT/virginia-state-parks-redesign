@@ -3,6 +3,9 @@
   font-weight: 500;
   padding: 1.5rem 4rem;
   border: none;
+  &:hover {
+    border: none;
+  }
 }
 
 .btn-primary {

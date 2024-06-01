@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Natural Bridge State Park | Virginia State Parks</title>
+    <meta
+      name="description"
+      content="Discover the 200-foot tall Natural Bridge at Virginia State Park, a National Historic Landmark in a scenic limestone gorge. Enjoy hiking trails and explore the Visitor Center exhibits."
+    />
   </head>
   <link rel="stylesheet" href="css/main.css" />
   <link
@@ -263,11 +267,11 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container my-xxl">
+      <section class="my-xxl">
+        <div class="container">
           <div class="row">
             <div class="col-12 col-lg-8">
-              <h2>Overview</h2>
+              <h2 class="m-0">Overview</h2>
               <div class="col-11">
                 <p>
                   Natural Bridge State Park was dedicated on September 24, 2016.
@@ -292,85 +296,94 @@
               </div>
             </div>
             <div class="col-12 col-lg-4">
-              <aside class="sidebar shadow">
-                <h3>Address</h3>
-                <p>6477 South Lee Highway, Natural Bridge, VA 24578</p>
-                <h3>Hours</h3>
-                <p>8 a.m. to dusk</p>
-                <h3>Contact</h3>
-                <p>NaturalBridge@dcr.virginia.gov</p>
-                <a href="tel:5402911326">(540) 291-1326.</a>
-              </aside>
+              <section aria-label="Park Information Sidebar">
+                <aside class="sidebar shadow">
+                  <h2>Hours</h2>
+                  <p>8 a.m. to dusk</p>
+
+                  <h2>Contact</h2>
+                  <div>
+                    <a href="mailto:NaturalBridge@dcr.virginia.gov"
+                      >NaturalBridge@dcr.virginia.gov</a
+                    >
+                  </div>
+                  <div>
+                    <a href="tel:5402911326" class="mt-xs">(540) 291-1326.</a>
+                  </div>
+                  <div class="mt-md mb-sm">
+                    <a
+                      href="https://maps.app.goo.gl/DRHW3N5xGf1jirCP8"
+                      class="btn btn-primary w-100"
+                      aria-label="Get Directions to Natural Bridge State Park"
+                      >Get Directions</a
+                    >
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-secondary w-100"
+                    aria-label="Make Reservations at Natural Bridge State Park"
+                    >Reservations</a
+                  >
+                </aside>
+              </section>
             </div>
           </div>
         </div>
       </section>
-      <section>
-        <div class="container my-xxl">
-          <h2>Amenities & Features</h2>
-          <div class="row">
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-wheelchair icon"></i>
-                </div>
-                <p>Accessible</p>
+      <section class="my-xxl">
+        <div class="container">
+          <h2 class="text-left mb-md">Amenities & Features</h2>
+          <div class="row text-center amenities">
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-wheelchair icon"></i>
               </div>
+              <p>Accessible</p>
             </div>
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-campground icon"></i>
-                </div>
-                <p>Camping</p>
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-campground icon"></i>
               </div>
+              <p>Camping</p>
             </div>
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-store icon"></i>
-                </div>
-                <p>Camp Store/Gift Shop</p>
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-store icon"></i>
               </div>
+              <p>Camp Store & Gift Shop</p>
             </div>
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-person-hiking icon"></i>
-                </div>
-                <p>Hiking</p>
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-person-hiking icon"></i>
               </div>
+              <p>Hiking</p>
             </div>
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-restroom icon"></i>
-                </div>
-                <p>Restroom</p>
+          </div>
+          <div class="row text-center amenities mt-md">
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-restroom icon"></i>
               </div>
+              <p>Restrooms</p>
             </div>
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-utensils icon"></i>
-                </div>
-                <p>Snack Bar</p>
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-utensils icon"></i>
               </div>
+              <p>Snackbar</p>
             </div>
-            <div class="col-2">
-              <div class="icon-row">
-                <div class="icon-container">
-                  <i class="fa-solid fa-house-flag icon"></i>
-                </div>
-                <p>Visitor Center</p>
+            <div class="col-12 col-md-3 mb-4">
+              <div class="icon-container">
+                <i class="fa-solid fa-house-flag icon"></i>
               </div>
+              <p>Visitor Center</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="map">
-        <div class="container my-xxl">
-          <h2>Map & Visitor Guide</h2>
+      <section class="map my-xxl">
+        <div class="container">
+          <h2 class="mb-md">Map & Visitor Guide</h2>
           <div class="embed-responsive mb-lg" style="height: 500px">
             <iframe
               class="embed-responsive-item"
@@ -390,8 +403,8 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container my-xxl">
+      <section class="my-xxl">
+        <div class="container">
           <h2>History</h2>
           <p>
             Natural Bridge formed when a sinkhole turned Cedar Creek into an
@@ -690,64 +703,42 @@
       </section>
       <section>
         <div class="container my-xxl">
-          <h2>Events at Natural Bridge</h2>
+          <h2>Related Blogs</h2>
           <div class="row row-cols-2 row-cols-md-4 g-4 activities mt-xl">
             <div class="col d-flex align-items-stretch">
               <div class="card">
                 <img
-                  src="/images/blog/JR-Tye-River-Overlook.jpeg"
+                  src="/images/natural-bridge/NB-sky.jpeg"
                   class="card-img-top"
-                  alt="Tye River Overlook at James River State Park."
+                  alt="A starry sky at Natural Bridge State Park."
                 />
                 <div class="card-body">
                   <a href="#" class="card-link stretched-link"
-                    >James River State Park celebrates 25 years of conservation
-                    and recreation
+                    >How to have the best stargazing adventure in Virginia State
+                    Parks
                   </a>
                 </div>
               </div>
             </div>
+
             <div class="col d-flex align-items-stretch">
               <div class="card">
                 <img
-                  src="/images/blog/NT-Railroad-Day.jpeg"
+                  src="/images/natural-bridge/NB-fall.jpeg"
                   class="card-img-top"
-                  alt="Unique hike in tunnel at Natural Tunnel State Park"
+                  alt="Fall foliage at Natural Bridge State Park."
                 />
                 <div class="card-body">
                   <a href="#" class="card-link stretched-link"
-                    >10 summer bucket list parks for family adventure</a
+                    >6 reasons to visit Natural Bridge this fall</a
                   >
                 </div>
               </div>
             </div>
-            <div class="col d-flex align-items-stretch">
-              <div class="card">
-                <img
-                  src="/images/blog/HM-Lodge.jpeg"
-                  class="card-img-top"
-                  alt="Lodge at Hungry Mother State Park."
-                />
-                <div class="card-body">
-                  <a href="#" class="card-link stretched-link"
-                    >Lodges: Virginia State Parks' best kept secret</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col d-flex align-items-stretch">
-              <div class="card">
-                <img
-                  src="/images/blog/WR-Volunteers.jpeg"
-                  class="card-img-top"
-                  alt="Volunteer dressed as a pioneer working at Wilderness Road State Park."
-                />
-                <div class="card-body">
-                  <a href="#" class="card-link stretched-link"
-                    >Wilderness Road atmosphere drives volunteerism</a
-                  >
-                </div>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col text-center mt-lg">
+              <a href="#" class="btn btn-primary">See all blogs</a>
             </div>
           </div>
         </div>
