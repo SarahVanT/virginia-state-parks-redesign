@@ -101,3 +101,27 @@
     color: $text-white !important;
   }
 }
+
+.btn-download {
+  background-color: $text-white;
+  border: 2px solid $text-white; // Adds border to maintain consistency with secondary
+  color: $brand-color !important;
+
+  &:hover {
+    background-color: $fill-color;
+    border: 2px solid $fill-color;
+    color: $brand-color;
+  }
+
+  &:focus {
+    outline: 2px solid $text-white !important;
+    outline-offset: 5px;
+    box-shadow: none;
+    background-color: $text-white;
+  }
+
+  &:active {
+    color: $brand-color !important;
+    background-color: $fill-color !important;
+  }
+}

@@ -50,7 +50,7 @@
 }
 
 .section-parking {
-  background: #f5f5f5;
+  // background: #f5f5f5;
   .link {
     display: inline-block;
     margin-left: $spacing-md;
@@ -106,7 +106,7 @@
     margin-bottom: $spacing-xs;
   }
 
-  .parking-right{
+  .parking-right {
     display: flex;
     align-items: start;
     justify-content: right;
@@ -115,4 +115,57 @@
   img {
     border-radius: 8px;
   }
+}
+
+// .custom-container {
+//   max-width: 960px; /* Adjust this value based on your preference */
+// }
+
+.ammenties {
+  background-color: $brand-color;
+  background-color: #204e2f;
+  color: $text-white;
+  margin: 0 $spacing-huge;
+
+  img {
+    width: 100%;
+    max-width: 40rem;
+    height: 50rem;
+  }
+  p {
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+// .fancy-date {
+//   color: $text-white;
+//   background: $brand-color;
+//   height: 7rem;
+//   width: 7rem;
+
+//   padding: $spacing-md;
+//   font-size: 1.8rem;
+//   font-weight: 500;
+//   text-align: center;
+//   border-radius: 100%;
+//   line-height: normal;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.card-label {
+  background-color: $lighten-brand-color;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.35rem 0.65rem;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.event-card {
+  background-color: $fill-color;
 }
