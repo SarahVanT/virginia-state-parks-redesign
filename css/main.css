@@ -12895,37 +12895,44 @@ html {
   background-color: #204e2f !important;
 }
 
-.btn-secondary {
+.btn-secondary:link {
   background-color: transparent;
   border: 2px solid #204e2f;
   color: #204e2f;
 }
-.btn-secondary:hover {
-  background-color: rgba(32, 78, 47, 0.8);
-  border: 2px solid transparent;
-  color: #fefefe;
+.btn-secondary:visited {
+  background-color: transparent;
+  border: 2px solid #204e2f;
+  color: #204e2f;
 }
 .btn-secondary:focus {
   outline: 3px solid #04140d !important;
   outline-offset: 3px;
   box-shadow: none;
   background-color: rgba(32, 78, 47, 0.8);
+  color: #fefefe !important;
+  border: 2px solid transparent;
+}
+.btn-secondary:hover {
+  background-color: rgba(32, 78, 47, 0.8);
+  border: 2px solid transparent;
+  color: #fefefe;
 }
 .btn-secondary:active {
   background-color: rgba(32, 78, 47, 0.8) !important;
-  border-color: rgba(32, 78, 47, 0.8) !important;
+  border: 2px solid transparent !important;
   color: #fefefe !important;
 }
 
-.btn-download {
+.btn-download:link {
   background-color: #fefefe;
   border: 2px solid #fefefe;
   color: #204e2f !important;
 }
-.btn-download:hover {
-  background-color: #e6e8e7;
-  border: 2px solid #e6e8e7;
-  color: #204e2f;
+.btn-download:visited {
+  background-color: #fefefe;
+  border: 2px solid #fefefe;
+  color: #204e2f !important;
 }
 .btn-download:focus {
   outline: 2px solid #fefefe !important;
@@ -12933,9 +12940,15 @@ html {
   box-shadow: none;
   background-color: #fefefe;
 }
+.btn-download:hover {
+  background-color: #e6e8e7;
+  border: 2px solid #e6e8e7;
+  color: #204e2f;
+}
 .btn-download:active {
-  color: #204e2f !important;
   background-color: #e6e8e7 !important;
+  border: 2px solid transparent;
+  color: #204e2f !important;
 }
 
 .form-label {
@@ -13138,12 +13151,15 @@ footer .notice {
 .section-parking .date-card {
   display: flex;
   flex-direction: row;
-  padding: 1.6rem 0;
-  width: 100%;
-  border-bottom: 1px solid #cdd1cf;
+  align-items: start;
+  margin-top: 4.8rem;
+  gap: 1.6rem;
 }
 .section-parking .date-card:first-of-type {
   padding-top: 0;
+}
+.section-parking col {
+  margin-right: 2.4rem;
 }
 .section-parking .event-details {
   margin-left: 15px;
@@ -13176,30 +13192,20 @@ footer .notice {
   align-items: center;
   justify-content: center;
 }
-.section-parking .location,
-.section-parking h3,
-.section-parking .h3 {
-  margin-bottom: 0.8rem;
-}
-.section-parking .parking-right {
-  display: flex;
-  align-items: start;
-  justify-content: right;
-}
-.section-parking img {
-  border-radius: 8px;
-}
 
 .ammenties {
   background-color: #204e2f;
   background-color: #204e2f;
   color: #fefefe;
   margin: 0 9.6rem;
+  border-radius: 8px;
 }
 .ammenties img {
   width: 100%;
   max-width: 40rem;
   height: 50rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 .ammenties p {
   font-size: 3rem;
