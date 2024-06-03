@@ -72,149 +72,60 @@
               </li>
             </ul>
             <form role="search">
-              <input title="Search" type="text" name="search" />
-              <button type="submit">Search</button>
-            </form>
-
-            <!-- <form class="my-2 my-lg-0">
               <input
-                class="form-control mr-sm-2"
+                title="Enter the terms you wish to search for."
                 type="search"
-                placeholder="Search"
+                name="search"
+                placeholder="Search Term"
                 aria-label="Search"
               />
-              <button
-                class="btn btn-primary my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
+              <button type="submit" class="form-btn">Search</button>
+            </form>
+            <!-- <form role="search">
+              <input
+                id="searchBar"
+                type="text"
+                placeholder="Search Term"
+                title="Search Term"
+              />
+              <button class="form-btn" type="submit">Search</button>
             </form> -->
           </div>
         </div>
       </nav>
     </header>
-    <!-- <header>
-      <nav class="navbar navbar-expand-lg container">
-        <div class="container">
-          <a href="#" class="navbar-brand"
-            ><img
-              src="/images/logo.png"
-              alt="Virginia State Parks Homepage"
-              width="110"
-          /></a>
-          
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Find Parks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Find Activities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Reservations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Buy a Pass</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-primary btn-sm" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header> -->
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="/images/logo.png" height="130" alt="Virginia State Parks Homepage" />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">Profile</a>
-            <a href="#" class="nav-item nav-link">Messages</a>
-            <a href="#" class="nav-item nav-link disabled" tabindex="-1"
-              >Reports</a
-            >
-          </div>
-          <div class="navbar-nav ms-auto">
-            <a href="#" class="nav-item nav-link">Login</a>
-          </div>
-        </div>
-      </div>
-    </nav> -->
     <main>
-      <section class="hero">
-        <div class="container mt-xxl">
+      <section class="hero mt-xxl">
+        <div class="container">
           <h1 class="text-center pb-sm">Discover Virginia's Parks</h1>
           <div class="row p-4 hero-image">
             <img
               src="/images/Rhododendron.jpg"
-              alt="Rhododendron hiking trail at Grayson Highlands"
+              alt="Rhododendron trail at Grayson Highlands"
             />
           </div>
-          <div class="w-50 finding-park p-xl">
+          <div class="finding-park p-xl">
             <form>
               <label for="parkSelect" class="form-label">Find a park:</label>
               <select id="parkSelect" class="form-select form-select-lg mb-3">
                 <option selected>Select a park</option>
                 <option value="BC">Bear Creek Lake</option>
-                <option value="BI">Belle Isle</option>
-                <option value="BK">Breaks Interstate</option>
                 <option value="NB">Natural Bridge</option>
               </select>
               <div class="d-flex align-items-center mt-md">
-                <button type="submit" class="btn btn-primary">Search</button>
-                <a href="#" style="margin-left: 30px">View all parks</a>
-                <!-- Add your link here -->
-              </div>
-              <!-- <div class="d-flex align-items-center">
-                <button type="submit" class="btn btn-primary mt-md">
+                <button type="submit" class="btn btn-primary btn-sm">
                   Search
                 </button>
-                <a href="#">View all state parks</a>
-              </div> -->
+                <a href="#" style="margin-left: 30px">View all parks</a>
+              </div>
             </form>
           </div>
         </div>
       </section>
       <!-- Activities -->
-      <section>
-        <div class="container my-huge">
+      <section class="my-xxl">
+        <div class="container">
           <h2 class="section-header">Featured activities</h2>
           <div class="row row-cols-2 row-cols-md-4 g-4 activities mt-xl">
             <div class="col d-flex align-items-stretch">
@@ -222,7 +133,7 @@
                 <img
                   src="/images/activities/Occoneechee-Lake.jpeg"
                   class="card-img-top"
-                  alt="Kayaking at Occoneechee Lake."
+                  alt="Person kayaking at Occoneechee Lake."
                 />
                 <div class="card-body">
                   <a href="#" class="card-link stretched-link">Boat rentals</a>
@@ -258,7 +169,7 @@
                 <img
                   src="/images/activities/leesylvania.jpg"
                   class="card-img-top"
-                  alt="Playground at Leesylvania."
+                  alt="Children playing at a playground at Leesylvania."
                 />
                 <div class="card-body">
                   <a href="#" class="card-link stretched-link">Playgrounds</a>
@@ -268,7 +179,7 @@
           </div>
           <div class="row">
             <div class="col text-center mt-lg">
-              <a href="#" class="btn btn-primary">Find more activities</a>
+              <a href="#" class="btn btn-secondary">Find more activities</a>
             </div>
           </div>
         </div>
@@ -276,8 +187,8 @@
       <section class="section-parking">
         <div class="container my-huge">
           <div class="row py-xxl">
-            <div class="col-6 events">
-              <h2 class="section-header text-center">Upcoming Events</h2>
+            <div class="col-12 col-lg-6 events">
+              <h2 class="section-header text-start">Upcoming Events</h2>
               <div class="date-card mt-xl">
                 <div class="fancy-date">June 1</div>
                 <div class="event-details">
@@ -341,31 +252,41 @@
                 </div>
               </div>
               <div class="d-flex justify-content-center">
-                <a href="#" class="text-center mt-lg">Find more events</a>
+                <a href="#" class="text-center btn btn-secondary mt-lg"
+                  >Find more events</a
+                >
               </div>
             </div>
-            <div class="col-6 parking-right">
-              <h2 class="section-header text-center">Park Pass</h2>
-              <div class="text-center mt-xl">
-                <img
-                  src="/images/Rectangle 18 (1).png"
-                  alt=""
-                  class="shadow"
-                  style="width: 60rem"
-                />
+            <div class="col-12 col-lg-6 parking-right">
+              <!-- <h2 class="section-header text-center">Amenities Guide</h2> -->
+              <div class="mt-xl">
+                <a href="">
+                  <img
+                    src="/images/parkGuide.png"
+                    class="shadow"
+                    style="width: 50rem"
+                    alt="Download PDF of Virginia State Parks Amenities Guide."
+                  />
+                </a>
+
+                <!-- <img src="/images/Testing.png" class="shadow" alt="" /> -->
               </div>
 
-              <p class="text-center p-md">
+              <!-- <p class="text-center p-md">
                 Explore Virginia's parks all year with the Virginia State Park
                 Annual Pass. For 12 months, you get access to all parks,
                 parking, and entry. Get your pass now and start discovering
                 Virginia's beautiful parks.
-              </p>
+              </p> -->
+              <!-- <p class="text-center">
+                Our comprehensive guide to all Virginia State Parks.
+              </p> -->
               <div
                 class="d-flex justify-content-center align-items-center mt-lg"
               >
-                <a href="#" class="btn btn-primary">Buy annual pass</a>
-                <a href="#" class="link">Learn more about passes</a>
+                <!-- <a href="#" class="btn btn-primary">Buy annual pass</a> -->
+                <!-- <a href="#" class="btn btn-primary">Download PDF Guide</a> -->
+                <!-- <a href="#" class="link">Learn more about passes</a> -->
               </div>
             </div>
           </div>
@@ -394,10 +315,10 @@
         </div> -->
       </section>
       <!-- Blog Posts -->
-      <section>
-        <div class="container my-huge">
+      <section class="my-lg">
+        <div class="container">
           <h2 class="section-header">Featured blogs</h2>
-          <div class="row row-cols-2 row-cols-md-4 g-4 activities mt-xl">
+          <div class="row row-cols-2 row-cols-md-4 gx-5 activities mt-xl">
             <div class="col d-flex align-items-stretch">
               <div class="card">
                 <img
@@ -458,7 +379,7 @@
           </div>
           <div class="row">
             <div class="col text-center mt-lg">
-              <a href="#" class="btn btn-primary">More blog posts</a>
+              <a href="#" class="btn btn-secondary">More blog posts</a>
             </div>
           </div>
         </div>

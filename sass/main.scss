@@ -33,6 +33,7 @@ $spacers: (
 );
 
 // import bootstrap
+@import "../sass/layouts/media-queries";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 @import "../sass/base/variables";

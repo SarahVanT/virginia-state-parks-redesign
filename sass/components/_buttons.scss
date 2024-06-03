@@ -1,26 +1,103 @@
 .btn {
   font-size: 1.9rem;
   font-weight: 500;
-  padding: 1.5rem 4rem;
-  border: none;
+  padding: 1.5rem 3rem;
+  // padding: 1.2rem 2rem;
+  border-radius: 10px;
+}
+
+.form-btn {
+  padding: 0 3rem;
+  background-color: $brand-color;
+  border: 2px solid $brand-color;
+  color: $text-white;
+  border-radius: 2px;
   &:hover {
-    border: none;
+    background-color: $lighten-brand-color;
+    border: 2px solid transparent;
+    color: $text-white;
   }
+
+  &:focus {
+    outline: 3px solid #04140d !important;
+    outline-offset: 1px;
+    box-shadow: none;
+    background-color: $brand-color;
+  }
+
+  &:active {
+    color: $text-white !important;
+    background-color: $brand-color !important;
+  }
+}
+
+.btn-sm {
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
 }
 
 .btn-primary {
   background-color: $brand-color;
+  border: 2px solid $brand-color; // Adds border to maintain consistency with secondary
   color: $text-white !important;
 
   &:hover {
     background-color: $lighten-brand-color;
+    border: 2px solid transparent;
+    color: $text-white;
   }
-  &:active {
+
+  &:focus {
+    outline: 3px solid #04140d !important;
+    outline-offset: 3px;
+    box-shadow: none;
     background-color: $brand-color;
   }
+
+  &:active {
+    color: $text-white !important;
+    background-color: $brand-color !important;
+  }
+}
+
+// .btn-primary {
+//   background-color: $brand-color;
+//   color: $text-white !important;
+
+//   &:hover {
+//     background-color: $lighten-brand-color;
+//   }
+//   &:active {
+//     background-color: $brand-color;
+//   }
+//   &:focus {
+//     outline: 2px solid $brand-color !important;
+//     outline-offset: 2px;
+//     box-shadow: none;
+//   }
+// }
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid $brand-color;
+  color: $brand-color;
+
+  &:hover {
+    background-color: $lighten-brand-color;
+    border: 2px solid transparent;
+    color: $text-white;
+  }
+
   &:focus {
-    outline: 2px solid $brand-color !important;
-    outline-offset: 2px;
+    outline: 3px solid #04140d !important;
+    outline-offset: 3px;
     box-shadow: none;
+    background-color: $lighten-brand-color;
+  }
+
+  &:active {
+    background-color: $lighten-brand-color !important;
+    border-color: $lighten-brand-color !important;
+    color: $text-white !important;
   }
 }

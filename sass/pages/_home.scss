@@ -15,6 +15,7 @@
 
     background: #fff; // Assuming $text-white is white, replace if necessary
     // border: 1px solid black;
+    width: 73rem;
     margin: 0 auto; // Center the form horizontally
     padding: 20px;
     position: absolute; // Position the form absolutely within the hero section
@@ -30,7 +31,12 @@
   }
 }
 
+.section-header {
+  font-weight: 700;
+}
+
 .activities {
+  --bs-gutter-x: 2.5rem;
   .card {
     --bs-card-border-color: none !important;
   }
@@ -67,10 +73,14 @@
     margin-left: 15px;
     h3 {
       font-size: 2rem;
+      margin-top: 0;
+    }
+    p {
+      margin-top: 0;
     }
     a {
       text-decoration: none;
-      &:hover{
+      &:hover {
         text-decoration: underline;
       }
     }
@@ -96,8 +106,10 @@
     margin-bottom: $spacing-xs;
   }
 
-  .parking-right {
-    padding-left: $spacing-md;
+  .parking-right{
+    display: flex;
+    align-items: start;
+    justify-content: right;
   }
 
   img {
