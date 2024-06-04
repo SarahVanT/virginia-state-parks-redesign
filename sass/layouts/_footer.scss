@@ -1,15 +1,11 @@
-.contact-links {
-  @include sm-phone {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
+
 
 .link-container {
   display: flex;
   align-items: center;
   margin-bottom: $spacing-sm;
+ 
+  
 
   .icon-container {
     height: 4rem;

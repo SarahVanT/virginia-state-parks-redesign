@@ -13115,6 +13115,13 @@ body {
   outline: 3px solid #204e2f;
   text-decoration: underline;
 }
+@media screen and (max-width: 991.98px) {
+  .navbar form {
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem 0;
+  }
+}
 .navbar .navbar-brand {
   display: inline-block; /* Ensure it covers the image */
   outline: none; /* Remove default outline */
@@ -13132,14 +13139,6 @@ body {
 @media screen and (max-width: 767.98px) {
   .navbar .navbar-brand img {
     height: 10rem;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .contact-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
