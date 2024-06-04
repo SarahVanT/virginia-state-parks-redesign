@@ -3,6 +3,9 @@
   color: #fff;
   display: flex;
   align-items: center; // Center items vertically
+  @include tablets {
+    flex-direction: column;
+  }
 
   .cardinal-logo {
     img {
@@ -21,6 +24,9 @@
       text-decoration: none;
       font-size: 1.6rem;
       font-weight: 700;
+      @include sm-phone {
+        text-align: center;
+      }
 
       &:focus {
         outline: 3px solid $text-white !important;
@@ -37,6 +43,10 @@
     padding: 1.5rem 2rem;
     background: #383939;
     cursor: pointer;
+    @include tablets {
+      margin-left: 0;
+      margin-top: $spacing-sm;
+    }
     &:hover {
       background: #ba1a1a;
     }
@@ -97,7 +107,6 @@
         text-decoration: underline;
       }
     }
-    
   }
 
   .navbar-brand {
@@ -109,9 +118,15 @@
     // }
 
     img {
-      height: 140px;
+      height: 14rem;
       width: auto;
       margin-bottom: -6rem;
+      @include tablets {
+        height: 12rem;
+      }
+      @include sm-phone {
+        height: 10rem;
+      }
     }
   }
 }

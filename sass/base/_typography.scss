@@ -22,12 +22,39 @@ h1 {
   font-size: 4.4rem;
   letter-spacing: 1px;
   font-weight: $font-weight-bold;
+  // @include tablets {
+  //   font-size: 43rem;
+  // }
+  @include lg-desktops {
+    font-size: 4.8rem;
+  }
+  @include tablets {
+    font-size: 3.6rem;
+  }
+  @include sm-phone {
+    font-size: 3.2rem;
+  }
+  @include xs-phone {
+    font-size: 2.8rem;
+  }
 }
 
 h2 {
   font-size: 3.6rem;
   // margin: 0 0 $spacing-sm;
   font-weight: 400;
+  @include lg-desktops {
+    font-size: 4.3rem;
+  }
+  @include tablets {
+    font-size: 3.2rem;
+  }
+  @include sm-phone {
+    font-size: 2.8rem;
+  }
+  @include xs-phone {
+    font-size: 2.3rem;
+  }
 }
 
 h3 {
@@ -44,6 +71,7 @@ p {
 }
 
 a {
+  font-size: 1.8rem;
   &:link,
   &:visited {
     color: $brand-color;

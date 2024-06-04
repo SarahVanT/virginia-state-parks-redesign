@@ -12797,10 +12797,50 @@ h1, .h1 {
   letter-spacing: 1px;
   font-weight: 700;
 }
+@media (max-width: 1399.98px) {
+  h1, .h1 {
+    font-size: 4.8rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  h1, .h1 {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  h1, .h1 {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  h1, .h1 {
+    font-size: 2.8rem;
+  }
+}
 
 h2, .h2 {
   font-size: 3.6rem;
   font-weight: 400;
+}
+@media (max-width: 1399.98px) {
+  h2, .h2 {
+    font-size: 4.3rem;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  h2, .h2 {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  h2, .h2 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  h2, .h2 {
+    font-size: 2.3rem;
+  }
 }
 
 h3, .h3 {
@@ -12816,6 +12856,9 @@ p {
   margin: 2.4rem 0 0 0;
 }
 
+a {
+  font-size: 1.8rem;
+}
 a:link, a:visited {
   color: #204e2f;
 }
@@ -12837,6 +12880,11 @@ a:hover, a:active {
 
 html {
   font-size: 62.5%;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 .btn {
@@ -12883,6 +12931,13 @@ html {
   background-color: rgba(32, 78, 47, 0.8);
   border: 2px solid transparent;
   color: #fefefe;
+}
+@media screen and (max-width: 767.98px) {
+  .btn-primary:hover {
+    background-color: #204e2f;
+    border: 2px solid #204e2f;
+    color: #fefefe !important;
+  }
 }
 .btn-primary:focus {
   outline: 3px solid #04140d !important;
@@ -12973,6 +13028,11 @@ html {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 991.98px) {
+  .va-bar {
+    flex-direction: column;
+  }
+}
 .va-bar .cardinal-logo img {
   width: 9rem;
   padding: 0.5rem 1rem;
@@ -12988,6 +13048,11 @@ html {
   font-size: 1.6rem;
   font-weight: 700;
 }
+@media screen and (max-width: 767.98px) {
+  .va-bar .dcr a {
+    text-align: center;
+  }
+}
 .va-bar .dcr a:focus {
   outline: 3px solid #fefefe !important;
 }
@@ -12999,6 +13064,12 @@ html {
   padding: 1.5rem 2rem;
   background: #383939;
   cursor: pointer;
+}
+@media screen and (max-width: 991.98px) {
+  .va-bar .button {
+    margin-left: 0;
+    margin-top: 1.6rem;
+  }
 }
 .va-bar .button:hover {
   background: #ba1a1a;
@@ -13049,9 +13120,27 @@ html {
   outline: none; /* Remove default outline */
 }
 .navbar .navbar-brand img {
-  height: 140px;
+  height: 14rem;
   width: auto;
   margin-bottom: -6rem;
+}
+@media screen and (max-width: 991.98px) {
+  .navbar .navbar-brand img {
+    height: 12rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .navbar .navbar-brand img {
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .contact-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .link-container {
@@ -13106,6 +13195,11 @@ footer .notice {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 767.98px) {
+  .hero .hero-image img {
+    height: 31rem;
+  }
+}
 .hero .finding-park {
   background: #fff;
   width: 73rem;
@@ -13114,10 +13208,29 @@ footer .notice {
   position: absolute;
   bottom: -6%;
   left: 50%;
+  padding: 4.8rem;
   transform: translateX(-50%);
   box-shadow: 0px 4px 8px rgba(4, 20, 13, 0.39);
   border-radius: 10px;
   z-index: 10;
+}
+@media screen and (max-width: 991.98px) {
+  .hero .finding-park {
+    width: 60rem;
+    padding: 2.4rem;
+    bottom: -12%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hero .finding-park {
+    width: 32rem;
+    padding: 1.6rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .hero .finding-park {
+    width: 32rem;
+  }
 }
 .hero a {
   display: inline-block;
@@ -13136,6 +13249,11 @@ footer .notice {
 .activities .card-img-top {
   border-radius: 10px;
   margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 767.98px) {
+  .activities .card-img-top {
+    margin-bottom: 0.8rem;
+  }
 }
 .activities .card-body {
   padding: 0;
@@ -13200,17 +13318,30 @@ footer .notice {
   margin: 0 9.6rem;
   border-radius: 8px;
 }
+@media screen and (max-width: 991.98px) {
+  .ammenties {
+    margin: 0;
+  }
+}
 .ammenties img {
   width: 100%;
-  max-width: 40rem;
-  height: 50rem;
+  height: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 .ammenties p {
   font-size: 3rem;
   font-weight: 500;
-  text-align: center;
+}
+@media screen and (max-width: 991.98px) {
+  .ammenties p {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .ammenties p {
+    font-size: 2rem;
+  }
 }
 
 .card-label {

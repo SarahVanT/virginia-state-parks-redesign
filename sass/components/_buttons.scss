@@ -45,6 +45,11 @@
     background-color: $lighten-brand-color;
     border: 2px solid transparent;
     color: $text-white;
+    @include sm-phone {
+      background-color: $brand-color;
+      border: 2px solid $brand-color;
+      color: $text-white !important;
+    }
   }
 
   &:focus {
