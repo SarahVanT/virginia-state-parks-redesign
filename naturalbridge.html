@@ -44,16 +44,19 @@
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+          <div
+            class="collapse navbar-collapse justify-content-end gap-lg"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex align-items-center gap-sm">
               <li class="nav-item">
                 <a class="nav-link" href="#">Find Parks</a>
               </li>
@@ -72,116 +75,25 @@
               </li>
             </ul>
             <form role="search">
-              <input title="Search" type="text" name="search" />
-              <button type="submit">Search</button>
-            </form>
-
-            <!-- <form class="my-2 my-lg-0">
               <input
-                class="form-control mr-sm-2"
+                title="Enter the terms you wish to search for."
                 type="search"
-                placeholder="Search"
+                name="search"
+                placeholder="Search Term"
                 aria-label="Search"
               />
-              <button
-                class="btn btn-primary my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form> -->
+              <button type="submit" class="form-btn">Search</button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
-    <!-- <header>
-      <nav class="navbar navbar-expand-lg container">
-        <div class="container">
-          <a href="#" class="navbar-brand"
-            ><img
-              src="/images/logo.png"
-              alt="Virginia State Parks Homepage"
-              width="110"
-          /></a>
-          
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Find Parks</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Find Activities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Reservations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Buy a Pass</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-primary btn-sm" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header> -->
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="/images/logo.png" height="130" alt="Virginia State Parks Homepage" />
-        </a>
-        <button
-          type="button"
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">Profile</a>
-            <a href="#" class="nav-item nav-link">Messages</a>
-            <a href="#" class="nav-item nav-link disabled" tabindex="-1"
-              >Reports</a
-            >
-          </div>
-          <div class="navbar-nav ms-auto">
-            <a href="#" class="nav-item nav-link">Login</a>
-          </div>
-        </div>
-      </div>
-    </nav> -->
     <main>
-      <section>
-        <div class="container mt-huge mb-lg">
+      <section class="mt-xxl">
+        <div class="container pb-lg">
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
               <h1>Natural Bridge</h1>
               <section aria-label="Location">
                 <address>
@@ -189,7 +101,7 @@
                 </address>
               </section>
             </div>
-            <div class="col virginia-map d-flex justify-content-end">
+            <div class="col-12 col-lg-6 virginia-map text-center text-lg-end">
               <svg
                 width="183"
                 height="93"
@@ -214,7 +126,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-6 block">
+            <div class="col-12 col-lg-6 block">
               <img
                 src="/images/natural-bridge/NB-large.jpeg"
                 alt="Natural Bridge State Park."
@@ -223,7 +135,7 @@
                 class="image-style-square"
               />
             </div>
-            <div class="col-6">
+            <div class="col-12 col-lg-6">
               <div class="row">
                 <div class="col-6">
                   <img
@@ -264,15 +176,22 @@
                 </div>
               </div>
             </div>
+            <div class="d-flex justify-content-end mt-sm">
+              <a
+                href="https://www.flickr.com/photos/vadcr/albums/72157669233431052/"
+                class="btn btn-secondary"
+                >View Photo Album</a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <section class="my-xxl">
+      <section class="my-xl my-lg-xxl">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-8">
               <h2 class="m-0">Overview</h2>
-              <div class="col-11">
+              <div class="col-12 col-lg-11">
                 <p>
                   Natural Bridge State Park was dedicated on September 24, 2016.
                   It features the 200-foot-tall Natural Bridge, a limestone arch
@@ -307,8 +226,8 @@
                       >NaturalBridge@dcr.virginia.gov</a
                     >
                   </div>
-                  <div>
-                    <a href="tel:5402911326" class="mt-xs">(540) 291-1326.</a>
+                  <div class="mt-xs">
+                    <a href="tel:5402911326">(540) 291-1326.</a>
                   </div>
                   <div class="mt-md mb-sm">
                     <a
@@ -330,10 +249,86 @@
           </div>
         </div>
       </section>
-      <section class="my-xxl">
+      <section class="my-xl my-lg-xxl">
         <div class="container">
           <h2 class="text-left mb-md">Amenities & Features</h2>
-          <div class="row text-center amenities">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 amenities">
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-wheelchair icon"></i>
+                <p>Accessible</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-campground icon"></i>
+                <p>Camping</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-store icon"></i>
+                <p>Store & Gift Shop</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-person-hiking icon"></i>
+                <p>Hiking</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-restroom icon"></i>
+                <p>Restrooms</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-utensils icon"></i>
+                <p>Snackbar</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-house-flag icon"></i>
+                <p>Visitor Center</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="amenities-icon-container">
+                <i class="fa-solid fa-person-hiking icon"></i>
+                <p>Hiking</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row row-cols-2 row-cols-lg-4 mt-md">
+            <div class="col">
+              <div class="icon-container">
+                <i class="fa-solid fa-restroom icon"></i>
+                <p>Restrooms</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon-container">
+                <i class="fa-solid fa-utensils icon"></i>
+                <p>Snackbar</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon-container">
+                <i class="fa-solid fa-house-flag icon"></i>
+                <p>Visitor Center</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="icon-container">
+                <i class="fa-solid fa-person-hiking icon"></i>
+                <p>Hiking</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="row text-center amenities">
             <div class="col-12 col-md-3 mb-4">
               <div class="icon-container">
                 <i class="fa-solid fa-wheelchair icon"></i>
@@ -378,17 +373,17 @@
               </div>
               <p>Visitor Center</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
-      <section class="map my-xxl">
+      <section class="map my-xl my-lg-xxl">
         <div class="container">
           <h2 class="mb-md">Map & Visitor Guide</h2>
           <div class="embed-responsive mb-lg" style="height: 500px">
             <iframe
-              class="embed-responsive-item"
+              class="embed-responsive-item shadow"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12639.510239412992!2d-79.5437475!3d37.6285678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x884cd08b91c6b643%3A0x1e39415be412ec50!2sNatural%20Bridge%20State%20Park!5e0!3m2!1sen!2sus!4v1717011228881!5m2!1sen!2sus"
-              style="border: 0; width: 100%; height: 100%"
+              style="border: 0; width: 100%; height: 100%; border-radius: 8px"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -403,7 +398,7 @@
           </ul>
         </div>
       </section>
-      <section class="my-xxl">
+      <section class="my-xl my-lg-xxl">
         <div class="container">
           <h2>History</h2>
           <p>
@@ -556,11 +551,13 @@
                         are accessible. The restrooms at the Cedar Creek
                         Pavilion are also accessible. To access the Cedar Creek
                         Trail, you must navigate 137 stairs. For help, contact
-                        rangers at the Visitor Center or call (540) 291-1326.
-                        The Cedar Creek Trail to the Natural Bridge is a level
-                        trail made of concrete and asphalt. Beyond the Natural
-                        Bridge, it becomes a gravel trail to the Lost River.
-                        Strollers are not recommended due to the many stairs.
+                        rangers at the Visitor Center or call
+                        <a href="tel:5402911326" class="mt-xs">(540) 291-1326</a
+                        >. The Cedar Creek Trail to the Natural Bridge is a
+                        level trail made of concrete and asphalt. Beyond the
+                        Natural Bridge, it becomes a gravel trail to the Lost
+                        River. Strollers are not recommended due to the many
+                        stairs.
                       </div>
                     </div>
                   </div>
@@ -624,9 +621,15 @@
                     >
                       <div class="accordion-body">
                         You can arrange ranger-led tours and field trips by
-                        calling (540) 254-0795 or emailing the park. These tours
-                        include the largest limestone arch in North America and
-                        a mountain stream ecosystem.
+                        calling
+                        <a href="tel:5402540795" class="mt-xs"
+                          >(540) 254-0795</a
+                        >
+                        or
+                        <a href="mailto:NaturalBridge@dcr.virginia.gov"
+                          >emailing the park</a
+                        >. These tours include the largest limestone arch in
+                        North America and a mountain stream ecosystem.
                       </div>
                     </div>
                   </div>
@@ -701,8 +704,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container my-xxl">
+      <section class="my-xl my-lg-xxl">
+        <div class="container">
           <h2>Related Blogs</h2>
           <div class="row row-cols-2 row-cols-md-4 g-4 activities mt-xl">
             <div class="col d-flex align-items-stretch">
@@ -745,9 +748,11 @@
       </section>
     </main>
     <footer>
-      <div class="container my-huge">
-        <div class="row d-flex justify-content-around">
-          <div class="col-12 col-md-3">
+      <div class="container my-xl my-lg-huge">
+        <div
+          class="row d-flex justify-content-center justify-content-lg-around"
+        >
+          <div class="col-12 col-lg-3">
             <h2>Explore the Parks</h2>
             <ul>
               <li><a href="">Reservations</a></li>
@@ -757,7 +762,7 @@
               <li><a href="">Accessibility</a></li>
             </ul>
           </div>
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3">
             <h2>Get Involved</h2>
             <ul>
               <li><a href="">Volunteer</a></li>
@@ -766,7 +771,7 @@
               <li><a href="">Host an Event</a></li>
             </ul>
           </div>
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3">
             <h2>Stay Connected</h2>
             <ul class="contact-links">
               <li class="link-container">
@@ -809,7 +814,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center notice p-md">
+      <div class="text-center notice p-sm p-md-md">
         This is a personal redesign project inspired by Virginia State Parks for
         educational purposes only.
       </div>

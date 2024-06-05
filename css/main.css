@@ -13375,6 +13375,11 @@ footer .notice {
   width: 30rem;
   height: auto;
 }
+@media screen and (max-width: 991.98px) {
+  .virginia-map svg {
+    width: 25rem;
+  }
+}
 
 .image-style-square {
   border-radius: 8px;
@@ -13389,6 +13394,12 @@ footer .notice {
   padding: 4.8rem;
   border-radius: 8px;
   word-wrap: break-word;
+}
+@media screen and (max-width: 991.98px) {
+  .sidebar {
+    margin-top: 3.2rem;
+    padding: 3.2rem;
+  }
 }
 .sidebar h2, .sidebar .h2 {
   margin: 1.6rem 0;
@@ -13405,8 +13416,23 @@ footer .notice {
   margin-top: 0;
 }
 
-.icon-container .icon {
-  font-size: 3rem; /* Adjust the font size of the icon */
+.amenities-icon-container .icon {
+  font-size: 3rem;
+  height: 30px;
+  width: 30px;
+}
+
+.amenities {
+  --bs-gutter-y: 2.4rem;
+}
+
+.amenities-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.amenities-icon-container p {
+  margin-top: 0;
 }
 
 .map ul {
@@ -13452,6 +13478,14 @@ footer .notice {
 }
 .questions-container .accordion-item p {
   margin: 0;
+}
+.questions-container .accordion-item .accordion-body {
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  line-height: 2;
+}
+.questions-container .accordion-item .accordion-body ul li {
+  list-style-type: disc;
 }
 .questions-container .accordion-item:first-child {
   border-top-left-radius: 0px !important;
