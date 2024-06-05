@@ -107,6 +107,11 @@
     background-color: $lighten-brand-color;
     border: 2px solid transparent;
     color: $text-white;
+    @include sm-phone {
+      background-color: transparent;
+      border: 2px solid $brand-color;
+      color: $brand-color;
+    }
   }
 
   &:active {
@@ -140,6 +145,11 @@
     background-color: $fill-color;
     border: 2px solid $fill-color;
     color: $brand-color;
+    @include sm-phone {
+      background-color: $text-white;
+      border: 2px solid $text-white;
+      color: $brand-color !important;
+    }
   }
 
   &:active {
