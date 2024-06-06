@@ -12973,6 +12973,13 @@ body {
   border: 2px solid transparent;
   color: #fefefe;
 }
+@media screen and (max-width: 767.98px) {
+  .btn-secondary:hover {
+    background-color: transparent;
+    border: 2px solid #204e2f;
+    color: #204e2f;
+  }
+}
 .btn-secondary:active {
   background-color: rgba(32, 78, 47, 0.8) !important;
   border: 2px solid transparent !important;
@@ -13000,6 +13007,13 @@ body {
   border: 2px solid #e6e8e7;
   color: #204e2f;
 }
+@media screen and (max-width: 767.98px) {
+  .btn-download:hover {
+    background-color: #fefefe;
+    border: 2px solid #fefefe;
+    color: #204e2f !important;
+  }
+}
 .btn-download:active {
   background-color: #e6e8e7 !important;
   border: 2px solid transparent;
@@ -13022,6 +13036,29 @@ body {
   outline: black;
 }
 
+.skip-to-content-link {
+  z-index: 4;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+  background: white;
+  color: black !important;
+  font-weight: 500;
+  font-size: 1.8rem;
+  height: auto;
+  line-height: 1;
+  text-align: center;
+  left: 50%;
+  padding: 1.5rem;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  transition: transform 0.3s;
+}
+
+.skip-to-content-link:focus {
+  transform: translate(-50%, 0);
+}
+
 .va-bar {
   background: #212121;
   color: #fff;
@@ -13037,10 +13074,20 @@ body {
   width: 9rem;
   padding: 0.5rem 1rem;
 }
+@media screen and (max-width: 991.98px) {
+  .va-bar .cardinal-logo img {
+    width: 8rem;
+  }
+}
 .va-bar .dcr {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+}
+@media screen and (max-width: 991.98px) {
+  .va-bar .dcr {
+    padding-left: 0;
+  }
 }
 .va-bar .dcr a {
   color: #fefefe;
@@ -13051,6 +13098,7 @@ body {
 @media screen and (max-width: 767.98px) {
   .va-bar .dcr a {
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 .va-bar .dcr a:focus {
@@ -13069,6 +13117,7 @@ body {
   .va-bar .button {
     margin-left: 0;
     margin-top: 1.6rem;
+    width: 100%;
   }
 }
 .va-bar .button:hover {
@@ -13098,6 +13147,11 @@ body {
 .navbar .navbar-nav .nav-item:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-item {
+    margin-right: 0;
+  }
+}
 .navbar .navbar-nav .nav-link {
   color: #04140d;
   font-weight: 400;
@@ -13120,11 +13174,16 @@ body {
     display: flex;
     justify-content: center;
     margin: 1.6rem 0;
+    gap: 0.8rem;
   }
 }
 .navbar .navbar-brand {
   display: inline-block; /* Ensure it covers the image */
   outline: none; /* Remove default outline */
+}
+.navbar .navbar-brand a:focus {
+  outline: 3px solid #005891 !important; /* Solid blue focus border */
+  outline-offset: 0px; /* Adjust if the outline needs more space around the element */
 }
 .navbar .navbar-brand img {
   height: 14rem;
@@ -13140,6 +13199,19 @@ body {
   .navbar .navbar-brand img {
     height: 10rem;
   }
+}
+.navbar .navbar-toggler {
+  border: thin solid transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23204e2f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 5h22M4 15h22M4 25h22'/%3E%3C/svg%3E");
+  width: 44px;
+  height: 35px;
+}
+
+.navbar-toggler.active .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath stroke='%23204e2f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M10 10l20 20M10 30L30 10'/%3E%3C/svg%3E");
 }
 
 .link-container {
@@ -13357,20 +13429,6 @@ footer .notice {
   background-color: #e6e8e7;
 }
 
-.parks .card {
-  --bs-card-border-color: none !important;
-}
-.parks .card-img-top {
-  border-radius: 10px;
-  margin-bottom: 1.6rem;
-}
-.parks .card-body {
-  padding: 0;
-}
-.parks .col {
-  margin-bottom: 2.4rem;
-}
-
 .virginia-map svg {
   width: 30rem;
   height: auto;
@@ -13469,7 +13527,6 @@ footer .notice {
   font-size: 2rem;
   color: #204e2f !important;
   font-weight: 600;
-  padding: 0.8rem;
 }
 .questions-container .accordion-item {
   border: none;

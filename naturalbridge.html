@@ -15,6 +15,7 @@
     rel="stylesheet"
   />
   <body>
+    <a class="skip-to-content-link" href="#main"> Skip to main content </a>
     <div class="va-bar">
       <div class="cardinal-logo">
         <img
@@ -37,9 +38,60 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/images/logo.png" alt="Virginia State Parks Homepage" />
+            <!-- Adjust height as needed -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end gap-lg"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex align-items-center gap-sm">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Parks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reservations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Buy a Pass</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+            <form role="search">
+              <input
+                title="Enter the terms you wish to search for."
+                type="search"
+                name="search"
+                placeholder="Search Term"
+                aria-label="Search"
+              />
+              <button type="submit" class="form-btn">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav class="navbar navbar-expand-lg">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="/images/logo.png" alt="Brand Logo" />
-            <!-- Adjust height as needed -->
+           
           </a>
           <button
             class="navbar-toggler"
@@ -86,10 +138,10 @@
             </form>
           </div>
         </div>
-      </nav>
+      </nav> -->
     </header>
 
-    <main>
+    <main id="main">
       <section class="mt-xxl">
         <div class="container pb-lg">
           <div class="row">
@@ -821,14 +873,17 @@
         educational purposes only.
       </div>
     </footer>
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/2e89d80a8b.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js"></script>
   </body>
 </html>

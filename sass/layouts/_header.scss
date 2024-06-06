@@ -1,3 +1,25 @@
+.skip-to-content-link {
+  z-index: 4;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+  background: white;
+  color: black !important;
+  font-weight: 500;
+  font-size: 1.8rem;
+  height: auto;
+  line-height: 1;
+  text-align: center;
+  left: 50%;
+  padding: 1.5rem;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  transition: transform 0.3s;
+  // border-bottom: 4px solid $brand-color;
+}
+.skip-to-content-link:focus {
+  transform: translate(-50%, 0);
+}
 .va-bar {
   background: #212121;
   color: #fff;
@@ -11,6 +33,9 @@
     img {
       width: 9rem;
       padding: 0.5rem 1rem;
+      @include tablets {
+        width: 8rem;
+      }
     }
   }
 
@@ -18,7 +43,9 @@
     display: flex;
     align-items: center; // Center link vertically
     padding-left: 1rem;
-
+    @include tablets {
+      padding-left: 0;
+    }
     a {
       color: $text-white;
       text-decoration: none;
@@ -26,6 +53,7 @@
       font-weight: 700;
       @include sm-phone {
         text-align: center;
+        font-size: 1.5rem;
       }
 
       &:focus {
@@ -46,6 +74,7 @@
     @include tablets {
       margin-left: 0;
       margin-top: $spacing-sm;
+      width: 100%;
     }
     &:hover {
       background: #ba1a1a;
@@ -87,6 +116,9 @@
       &:last-child {
         margin-right: 0;
       }
+      @include tablets {
+        margin-right: 0;
+      }
     }
 
     .nav-link {
@@ -113,6 +145,7 @@
       display: flex;
       justify-content: center;
       margin: $spacing-sm 0;
+      gap: $spacing-xs;
     }
   }
 
@@ -121,8 +154,15 @@
     outline: none; /* Remove default outline */
 
     // &:focus {
-    //   outline: 3px solid $brand-color; /* Custom focus outline */
+    //   outline: 3px solid #005891; /* Adjust color to match your brand color */
+    //   padding: 0; /* Adjust this value as needed to fit the focus border correctly */
+    //   outline-offset: 0px; /* Adjusts the spacing between the border and the element */
     // }
+
+    a:focus {
+      outline: 3px solid #005891 !important; /* Solid blue focus border */
+      outline-offset: 0px; /* Adjust if the outline needs more space around the element */
+    }
 
     img {
       height: 14rem;
@@ -136,4 +176,17 @@
       }
     }
   }
+  .navbar-toggler {
+    border: thin solid transparent;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23204e2f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 5h22M4 15h22M4 25h22'/%3E%3C/svg%3E");
+  width: 44px;
+  height: 35px;
+}
+
+.navbar-toggler.active .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath stroke='%23204e2f' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M10 10l20 20M10 30L30 10'/%3E%3C/svg%3E");
 }
