@@ -140,14 +140,44 @@
       }
     }
   }
-  form {
-    @include tablets {
-      display: flex;
-      justify-content: center;
-      margin: $spacing-sm 0;
-      gap: $spacing-xs;
+  .search-form {
+    display: flex;
+
+    border-radius: 4px; // Rounded corners
+
+    .search-input {
+      flex-grow: 1; // Takes up the remaining space
+      border: none;
+      line-height: 32px;
+      padding: 0 10px;
+      border: 1px solid #57645e;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .search-button {
+      background-color: $brand-color;
+      color: white;
+      border: none;
+      padding: 0 20px;
+      border-radius: 0 4px 4px 0; // Rounded corners on the right
+
+      &:focus {
+        outline: none;
+      }
     }
   }
+
+  // form {
+  //   @include tablets {
+  //     display: flex;
+  //     justify-content: center;
+  //     margin: $spacing-sm 0;
+  //     gap: $spacing-xs;
+  //   }
+  // }
 
   .navbar-brand {
     display: inline-block; /* Ensure it covers the image */

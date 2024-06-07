@@ -13169,13 +13169,29 @@ body {
   outline: 3px solid #204e2f;
   text-decoration: underline;
 }
-@media screen and (max-width: 991.98px) {
-  .navbar form {
-    display: flex;
-    justify-content: center;
-    margin: 1.6rem 0;
-    gap: 0.8rem;
-  }
+.navbar .search-form {
+  display: flex;
+  border-radius: 4px;
+}
+.navbar .search-form .search-input {
+  flex-grow: 1;
+  border: none;
+  line-height: 32px;
+  padding: 0 10px;
+  border: 1px solid #57645e;
+}
+.navbar .search-form .search-input:focus {
+  outline: none;
+}
+.navbar .search-form .search-button {
+  background-color: #204e2f;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 4px 4px 0;
+}
+.navbar .search-form .search-button:focus {
+  outline: none;
 }
 .navbar .navbar-brand {
   display: inline-block; /* Ensure it covers the image */
