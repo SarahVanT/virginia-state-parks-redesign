@@ -12789,7 +12789,7 @@ h3,
 h2, .h2,
 h3,
 .h3 {
-  margin-top: 3.2rem;
+  margin: 3.2rem 0;
 }
 
 h1, .h1 {
@@ -12853,7 +12853,7 @@ p {
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 2;
-  margin: 2.4rem 0 0 0;
+  margin: 0 0 2.4rem 0;
 }
 
 a {
@@ -13341,11 +13341,14 @@ footer .notice {
   display: flex;
   flex-direction: row;
   align-items: start;
-  margin-top: 4.8rem;
+  margin-bottom: 3.2rem;
   gap: 1.6rem;
 }
 .section-parking .date-card:first-of-type {
   padding-top: 0;
+}
+.section-parking .date-card:last-child {
+  margin-bottom: 0;
 }
 .section-parking col {
   margin-right: 2.4rem;
@@ -13356,15 +13359,16 @@ footer .notice {
 .section-parking .event-details h3, .section-parking .event-details .h3 {
   font-size: 2rem;
   margin-top: 0;
-}
-.section-parking .event-details p {
-  margin-top: 0;
+  margin-bottom: 8px;
 }
 .section-parking .event-details a {
   text-decoration: none;
 }
 .section-parking .event-details a:hover {
   text-decoration: underline;
+}
+.section-parking .event-details p {
+  margin: 0;
 }
 .section-parking .fancy-date {
   color: #fefefe;
@@ -13486,7 +13490,6 @@ footer .notice {
 
 .amenities-icon-container {
   display: flex;
-  align-items: center;
   gap: 2.4rem;
 }
 .amenities-icon-container p {
@@ -13512,6 +13515,7 @@ footer .notice {
 }
 .questions-container h3, .questions-container .h3 {
   margin-top: 0;
+  margin-bottom: 0.8rem;
 }
 .questions-container .question-category {
   padding-left: 1.2rem;

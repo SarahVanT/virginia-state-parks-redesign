@@ -15,7 +15,7 @@ h3 {
 
 h2,
 h3 {
-  margin-top: $spacing-lg;
+  margin: $spacing-lg 0;
 }
 
 h1 {
@@ -67,7 +67,7 @@ p {
   font-weight: $font-weight-regular;
   letter-spacing: 0.5px;
   line-height: 2;
-  margin: $spacing-md 0 0 0;
+  margin: 0 0 $spacing-md 0;
 }
 
 a {

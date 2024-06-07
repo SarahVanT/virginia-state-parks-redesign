@@ -65,7 +65,7 @@
 
 .amenities-icon-container {
   display: flex;
-  align-items: center;
+  // align-items: center;
   gap: $spacing-md;
   p {
     margin-top: 0;
@@ -93,6 +93,7 @@
 
   h3 {
     margin-top: 0;
+    margin-bottom: $spacing-xs;
   }
 
   .question-category {

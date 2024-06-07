@@ -86,16 +86,13 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin-top: $spacing-xl;
+    margin-bottom: $spacing-lg;
     gap: $spacing-sm;
-    // gap: $spacing-md;
-    // border: thin solid $stroke-weak-color;
-    // padding: $spacing-sm 0;
-    // width: 100%;
-    // border-bottom: 1px solid $stroke-weak-color;
-    // padding: $spacing-md;
     &:first-of-type {
       padding-top: 0; // Override padding for the first date-card
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
   col {
@@ -108,15 +105,16 @@
     h3 {
       font-size: 2rem;
       margin-top: 0;
-    }
-    p {
-      margin-top: 0;
+      margin-bottom: 8px;
     }
     a {
       text-decoration: none;
       &:hover {
         text-decoration: underline;
       }
+    }
+    p {
+      margin: 0;
     }
   }
   .fancy-date {
