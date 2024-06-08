@@ -15,26 +15,32 @@
     rel="stylesheet"
   />
   <body>
-    <a class="skip-to-content-link" href="#main"> Skip to main content </a>
-    <div class="va-bar">
-      <div class="cardinal-logo">
-        <img
-          src="https://www.developer.virginia.gov/media/developer/assets/img/bbar_logos-white.svg"
-          alt="Commonwealth of Virginia cardinal logo"
-        />
+    <a class="skip-to-content-link" href="#main">Skip to main content </a>
+    <section
+      class="va-bar"
+      aria-label="Virginia State Parks, a part of the Department of Conservation and Recreation"
+    >
+      <div class="container va-bar-grouping">
+        <div class="cardinal-logo">
+          <img
+            src="https://www.developer.virginia.gov/media/developer/assets/img/bbar_logos-white.svg"
+            alt="Commonwealth of Virginia cardinal logo."
+          />
+          <div class="dcr">
+            <a href="https://www.dcr.virginia.gov"
+              >Virginia Department of Conservation and Recreation</a
+            >
+          </div>
+        </div>
+
+        <div class="button text-center">
+          <a href="https://www.virginia.gov/services/"
+            >Find a Commonwealth Resource
+            <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span
+          ></a>
+        </div>
       </div>
-      <div class="dcr">
-        <a href="https://www.dcr.virginia.gov"
-          >Virginia Department of Conservation and Recreation</a
-        >
-      </div>
-      <div class="button text-center">
-        <a href="https://www.virginia.gov/services/"
-          >Find a Commonwealth Resource
-          <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span
-        ></a>
-      </div>
-    </div>
+    </section>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -75,12 +81,14 @@
               </li>
             </ul>
             <form role="search" class="search-form">
+              <label for="search-input" class="visually-hidden"
+                >Enter the terms you wish to search for</label
+              >
               <input
-                title="Enter the terms you wish to search for."
+                id="search-input"
                 type="search"
                 name="search"
                 placeholder="Search Term"
-                aria-label="Search"
                 class="search-input"
               />
               <button type="submit" class="search-button">Search</button>
@@ -169,7 +177,7 @@
                 <div class="col-6">
                   <img
                     src="/images/natural-bridge/NB-small2.jpeg"
-                    alt=""
+                    alt="Sunset at Natural Bridge State Park."
                     height="450"
                     width="450"
                     class="image-style-square"
@@ -229,23 +237,21 @@
                       >NaturalBridge@dcr.virginia.gov</a
                     >
                   </div>
-                  <div class="mt-xs">
+                  <div class="mt-xs mb-md">
                     <a href="tel:5402911326">(540) 291-1326.</a>
                   </div>
-                  <div class="mt-md mb-sm">
+                  <div class="d-flex flex-column gap-sm">
                     <a
                       href="https://maps.app.goo.gl/DRHW3N5xGf1jirCP8"
                       class="btn btn-primary w-100 shadow"
                       aria-label="Get Directions to Natural Bridge State Park"
                       >Get Directions</a
                     >
+
+                    <a href="#" class="btn btn-secondary w-100 shadow"
+                      >Make Reservations</a
+                    >
                   </div>
-                  <a
-                    href="#"
-                    class="btn btn-secondary w-100 shadow"
-                    aria-label="Make Reservations at Natural Bridge State Park"
-                    >Reservations</a
-                  >
                 </aside>
               </section>
             </div>

@@ -12791,6 +12791,13 @@ h3,
 .h3 {
   margin: 3.2rem 0;
 }
+@media screen and (max-width: 991.98px) {
+  h2, .h2,
+  h3,
+  .h3 {
+    margin: 2.4rem 0;
+  }
+}
 
 h1, .h1 {
   font-size: 4.4rem;
@@ -13063,12 +13070,11 @@ body {
   background: #212121;
   color: #fff;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
-@media screen and (max-width: 991.98px) {
-  .va-bar {
-    flex-direction: column;
-  }
+.va-bar .cardinal-logo {
+  display: flex;
+  align-items: center;
 }
 .va-bar .cardinal-logo img {
   width: 9rem;
@@ -13077,16 +13083,6 @@ body {
 @media screen and (max-width: 991.98px) {
   .va-bar .cardinal-logo img {
     width: 8rem;
-  }
-}
-.va-bar .dcr {
-  display: flex;
-  align-items: center;
-  padding-left: 1rem;
-}
-@media screen and (max-width: 991.98px) {
-  .va-bar .dcr {
-    padding-left: 0;
   }
 }
 .va-bar .dcr a {
@@ -13107,8 +13103,19 @@ body {
 .va-bar .dcr a:hover {
   text-decoration: underline;
 }
+.va-bar .va-bar-grouping {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 991.98px) {
+  .va-bar .va-bar-grouping {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
 .va-bar .button {
-  margin-left: auto;
   padding: 1.5rem 2rem;
   background: #383939;
   cursor: pointer;
@@ -13137,8 +13144,6 @@ body {
 }
 
 .navbar {
-  border-bottom: 1px solid #cdd1cf;
-  border-bottom: thin solid rgba(205, 209, 207, 0.33);
   border-bottom: thin solid #cdd1cf;
 }
 .navbar .navbar-nav .nav-item {
@@ -13510,6 +13515,7 @@ footer .notice {
 }
 .amenities-icon-container p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .map ul {

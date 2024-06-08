@@ -24,10 +24,12 @@
   background: #212121;
   color: #fff;
   display: flex;
-  align-items: center; // Center items vertically
-  @include tablets {
-    flex-direction: column;
-  }
+  justify-content: space-between;
+  // display: flex;
+  // align-items: center;
+  // @include tablets {
+  //   flex-direction: column;
+  // }
 
   .cardinal-logo {
     img {
@@ -37,15 +39,17 @@
         width: 8rem;
       }
     }
+    display: flex;
+    align-items: center;
   }
 
   .dcr {
-    display: flex;
-    align-items: center; // Center link vertically
-    padding-left: 1rem;
-    @include tablets {
-      padding-left: 0;
-    }
+    // display: flex;
+    // align-items: center; // Center link vertically
+    // padding-left: 1rem;
+    // @include tablets {
+    //   padding-left: 0;
+    // }
     a {
       color: $text-white;
       text-decoration: none;
@@ -66,8 +70,19 @@
     }
   }
 
+  .va-bar-grouping {
+    display: flex;
+    justify-content: space-between;
+    @include tablets {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  }
+
   .button {
-    margin-left: auto;
+    // margin-left: auto;
     padding: 1.5rem 2rem;
     background: #383939;
     cursor: pointer;
@@ -96,19 +111,7 @@
   }
 }
 
-// nav {
-//   // display: flex;
-//   // align-items: center;
-//   // height: 10rem;
-//   // border-bottom: 1px solid #cdd1cf;
-// }
-
 .navbar {
-  // background: #f5f5f5;
-
-  // Cant decide which one I like...
-  border-bottom: 1px solid #cdd1cf;
-  border-bottom: thin solid rgba(205, 209, 207, 0.33);
   border-bottom: thin solid #cdd1cf;
   .navbar-nav {
     .nav-item {

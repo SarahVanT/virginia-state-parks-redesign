@@ -16,25 +16,31 @@
   />
   <body>
     <a class="skip-to-content-link" href="#main"> Skip to main content </a>
-    <div class="va-bar">
-      <div class="cardinal-logo">
-        <img
-          src="https://www.developer.virginia.gov/media/developer/assets/img/bbar_logos-white.svg"
-          alt="Commonwealth of Virginia cardinal logo"
-        />
+    <section
+      class="va-bar"
+      aria-label="Virginia State Parks, a part of the Department of Conservation and Recreation"
+    >
+      <div class="container va-bar-grouping">
+        <div class="cardinal-logo">
+          <img
+            src="https://www.developer.virginia.gov/media/developer/assets/img/bbar_logos-white.svg"
+            alt="Commonwealth of Virginia cardinal logo."
+          />
+          <div class="dcr">
+            <a href="https://www.dcr.virginia.gov"
+              >Virginia Department of Conservation and Recreation</a
+            >
+          </div>
+        </div>
+
+        <div class="button text-center">
+          <a href="https://www.virginia.gov/services/"
+            >Find a Commonwealth Resource
+            <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span
+          ></a>
+        </div>
       </div>
-      <div class="dcr">
-        <a href="https://www.dcr.virginia.gov"
-          >Virginia Department of Conservation and Recreation</a
-        >
-      </div>
-      <div class="button text-center">
-        <a href="https://www.virginia.gov/services/"
-          >Find a Commonwealth Resource
-          <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span
-        ></a>
-      </div>
-    </div>
+    </section>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -49,7 +55,7 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Toggle main navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -75,15 +81,16 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
             </ul>
-            <form role="search">
+            <form role="search" class="search-form">
               <input
                 title="Enter the terms you wish to search for."
                 type="search"
                 name="search"
                 placeholder="Search Term"
                 aria-label="Search"
+                class="search-input"
               />
-              <button type="submit" class="form-btn">Search</button>
+              <button type="submit" class="search-button">Search</button>
             </form>
           </div>
         </div>
