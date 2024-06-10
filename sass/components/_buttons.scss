@@ -65,23 +65,6 @@
   }
 }
 
-// .btn-primary {
-//   background-color: $brand-color;
-//   color: $text-white !important;
-
-//   &:hover {
-//     background-color: $lighten-brand-color;
-//   }
-//   &:active {
-//     background-color: $brand-color;
-//   }
-//   &:focus {
-//     outline: 2px solid $brand-color !important;
-//     outline-offset: 2px;
-//     box-shadow: none;
-//   }
-// }
-
 .btn-secondary {
   &:link {
     background-color: transparent;
@@ -124,13 +107,13 @@
 .btn-download {
   &:link {
     background-color: $text-white;
-    border: 2px solid $text-white; // Adds border to maintain consistency with secondary
+    border: 2px solid $text-white;
     color: $brand-color !important;
   }
 
   &:visited {
     background-color: $text-white;
-    border: 2px solid $text-white; // Adds border to maintain consistency with secondary
+    border: 2px solid $text-white;
     color: $brand-color !important;
   }
 
