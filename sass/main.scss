@@ -41,9 +41,9 @@ $spacers: (
 @import "../sass/custom/custom-bootstrap";
 // Custom scss
 @import "../sass/base/reset";
-
 @import "../sass/base/utilities";
 @import "../sass/components/buttons";
+@import "../sass/components/forms";
 @import "../sass/layouts/header";
 @import "../sass/layouts/footer";
 @import "../sass/pages/home";

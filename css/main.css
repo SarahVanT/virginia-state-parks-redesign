@@ -13027,6 +13027,22 @@ body {
   color: #204e2f !important;
 }
 
+.form-label {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form-select-lg {
+  font-size: 1.6rem;
+  border-color: #57645e;
+  border-width: 0.2rem;
+}
+.form-select-lg:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0);
+  outline: black;
+}
+
 .skip-to-content-link {
   z-index: 4;
   left: 50%;
