@@ -13216,11 +13216,6 @@ body {
     height: 12rem;
   }
 }
-@media screen and (max-width: 767.98px) {
-  .navbar .navbar-brand img {
-    height: 10rem;
-  }
-}
 .navbar .navbar-toggler {
   border: thin solid transparent;
 }
@@ -13367,9 +13362,6 @@ footer .notice {
 }
 .section-parking .date-card:first-of-type {
   padding-top: 0;
-}
-.section-parking .date-card:last-child {
-  margin-bottom: 0;
 }
 .section-parking col {
   margin-right: 2.4rem;
@@ -13518,6 +13510,15 @@ footer .notice {
   margin-bottom: 0;
 }
 
+.map-iframe {
+  height: 50rem;
+}
+@media screen and (max-width: 991.98px) {
+  .map-iframe {
+    height: 30rem;
+  }
+}
+
 .map ul {
   padding-left: 0;
 }
@@ -13554,6 +13555,11 @@ footer .notice {
   color: #204e2f !important;
   font-weight: 600;
 }
+@media screen and (max-width: 991.98px) {
+  .questions-container .accordion-header .accordion-button {
+    font-size: 1.6rem;
+  }
+}
 .questions-container .accordion-item {
   border: none;
   border-radius: 0px !important;
@@ -13587,4 +13593,7 @@ footer .notice {
 .questions-container .accordion-item .accordion-button:not(.collapsed) {
   background-color: rgba(255, 192, 203, 0);
   box-shadow: none;
+}
+.questions-container .accordion-item .accordion-button::after {
+  --bs-accordion-btn-icon-width: 2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -91,9 +91,6 @@
     &:first-of-type {
       padding-top: 0; // Override padding for the first date-card
     }
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
   col {
     margin-right: $spacing-md;

@@ -204,9 +204,6 @@
       @include tablets {
         height: 12rem;
       }
-      @include sm-phone {
-        height: 10rem;
-      }
     }
   }
   .navbar-toggler {
